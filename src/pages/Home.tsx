@@ -1,5 +1,5 @@
-import { HeroSection } from "../components/HeroSection"
-import { Section } from "../components/Section"
+import { HeroSection } from "../components/HeroSection.tsx"
+import { Section } from "../components/Section.tsx"
 
 export const Home = () => {
     return (
