@@ -35,6 +35,8 @@
     --color-blinkRed: #e73838;
     --color-blinkGreen: #0c831f;
 
+    --background-image-blackTexture: url('assets/images/blackTexture.png');
+
     --font-celias: 'Celias', sans-serif;
     --font-celias-medium: 'Celias Medium', sans-serif;
     --font-celias-bold: 'Celias Bold', sans-serif;
