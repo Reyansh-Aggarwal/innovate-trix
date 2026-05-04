@@ -21,6 +21,15 @@
     font-style: normal;
 }
 
+
+@font-face {
+    font-family: 'Impact';
+    src: url('./assets/fonts/Impact.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 @theme {
     --color-blinkYellow: #ffd15d;
     --color-blinkRed: #e73838;
@@ -29,4 +38,5 @@
     --font-celias: 'Celias', sans-serif;
     --font-celias-medium: 'Celias Medium', sans-serif;
     --font-celias-bold: 'Celias Bold', sans-serif;
+    --font-impact: 'Impact', sans-serif;
 }
