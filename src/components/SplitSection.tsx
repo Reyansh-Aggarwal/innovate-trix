@@ -21,7 +21,7 @@ export const SplitSection = () => {
                     trigger: "#splitSection",
                     pin: true,
                     start: "center center",
-                    end: "+=1000",
+                    end: "+=1500",
                     scrub: 0.6,
                 },
             });
@@ -64,15 +64,15 @@ export const SplitSection = () => {
 
     return (
         <div id="splitSection" data-snap
-            className="w-full h-dvh flex flex-col bg-white justify-between snap-start">
+            className="w-full h-dvh flex flex-col bg-white justify-between select-none">
             <Ribbon />
             <div className="w-[0px] h-full bg-white left-1/2 absolute z-30 hidden" /> {/* This is just there */}
 
-            <div className="h-full flex flex-col md:grid md:grid-cols-2 justify-around md:justify-center align-center pl-4 md:pl-0 pr-0 text-white">
+            <div className="h-full flex flex-col md:grid md:grid-cols-2 justify-around md:justify-center align-center text-white">
 
                 {/* YE */}
                 <div id="Ye"
-                    className=" relative w-full h-full flex flex-col items-center justify-between md:justify-around">
+                    className=" relative w-full h-full flex flex-col items-center justify-center md:justify-around">
 
                     <div className="absolute inset-0 pointer-events-none">
                         <div
@@ -108,11 +108,10 @@ export const SplitSection = () => {
                     <img src={bearHead} className="object-cover max-w-full hidden md:block" />
                 </div>
 
-                <hr className="w-full bg-white -mt-12 z-0 block md:hidden" />
 
                 {/* Blinkit */}
                 <div id="Blinkit"
-                    className="relative w-full h-full flex flex-col-reverse md:flex-col items-center justify-between md:justify-around -mr-4 md:-mr-12">
+                    className="relative w-full h-full flex flex-col-reverse md:flex-col items-center justify-center md:justify-around -mr-4 md:-mr-12">
                     <div className="absolute inset-0 pointer-events-none">
                         <div
                             ref={blinkitBgRef}
@@ -121,7 +120,7 @@ export const SplitSection = () => {
                         />
                     </div>
 
-                    <span className="relative inline-block pr-8">
+                    <span className="relative inline-block md:pr-8">
                         <h1 className={cn(
                             "text-white font-celias-bold",
                             "tracking-[-0.6rem] text-8xl md:text-[8rem]"

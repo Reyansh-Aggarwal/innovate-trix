@@ -29,19 +29,45 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Druk Bold';
+    src: url('./assets/fonts/Druk-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Druk Super';
+    src: url('./assets/fonts/Druk-Super.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
 
 @theme {
     --color-blinkYellow: #f9d02e;
-    --color-blinkRed: #e73838;
     --color-blinkGreen: #318616;
     --color-dark: #1a1a1a;
 
-    --background-image-blackTexture: url('assets/images/blackTexture.png');
+    --color-gradPurple: #502876;
+    --color-gradPink: #ed008b;
 
     --font-celias: 'Celias', sans-serif;
     --font-celias-medium: 'Celias Medium', sans-serif;
     --font-celias-bold: 'Celias Bold', sans-serif;
     --font-impact: 'Impact', sans-serif;
+    --font-druk-super: 'Druk Super', 'Roboto Bold', sans-serif;
+    --font-druk-bold: 'Druk Bold', 'Roboto Medium', sans-serif;
 
-    --tracking-blink: -0.06rem;
+    --animate-fade-in: fade-in 2s ease-out forwards;
+    --animate-fade-in-delay: fade-in 2s ease-out 1s forwards;
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
 }

@@ -54,7 +54,7 @@ export const HeroSection = () => {
                         blink<span className="text-blinkGreen">it</span>
                     </span>
                     <span ref={xRef}
-                        className="text-[5rem] text-center">
+                        className="opacity-0 animate-fade-in text-[5rem] text-center">
                         ×
                     </span>
                     <span
