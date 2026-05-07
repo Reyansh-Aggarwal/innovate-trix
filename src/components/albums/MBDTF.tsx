@@ -3,7 +3,7 @@ import albumImage from "../../assets/images/album-covers/mbdtf.png";
 
 export const MBDTF = () => {
 
-    const list = ["MAGGI", "NOTEBOOKS", "RAMEN", "HIGHLIGHTERS", "FROZEN SNACKS", "STATIONERY"];
+    const list = ["CHEESECAKE", "MACARONS", "BROWNIES", "TIRAMISU"];
 
     return (
         <div className={cn(
