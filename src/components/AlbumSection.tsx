@@ -1,5 +1,6 @@
 import { cn } from "../lib/utils"
 import graduationCover from "../assets/images/album-covers/graduation.png";
+import mbdtfCover from "../assets/images/album-covers/mbdtf.png";
 import { useRef, useEffect, useState } from "react";
 import { NavLink } from "react-router";
 
@@ -32,31 +33,55 @@ export const AlbumSection = () => {
                 isSticky ? "py-3" : ""
             )}>
                 <h1 className={cn(
-                    "text-black transition-all duration-300 px-8 py-2 rounded-2xl",
-                    isSticky ? "text-5xl shadow shadow-md shadow-black/30" : "text-5xl md:text-7xl"
+                    "text-black transition-all duration-300 px-8  rounded-2xl bg-blinkYellow",
+                    isSticky ? "text-5xl shadow shadow-md shadow-black/30 py-4" : "text-5xl md:text-7xl"
                 )}>
                     the collection
                 </h1>
             </div>
 
             <div id="tiles"
-                className="w-full grid grid-cols-1 md:flex md:flex-wrap items-center justify-center gap-4 md:gap-40 px-12 font-celias z-10">
+                className="w-full grid grid-cols-1 md:flex md:flex-wrap items-center justify-center gap-4 md:gap-40 px-12 font-celias-medium z-10">
                 <div id="tile"
                     className={cn(
                         "flex flex-col justify-center items-center gap-8 md:gap-16",
-                        "py-12 px-16 md:px-12 md:mx-4 rounded-4xl",
+                        "py-12 px-16 md:px-12 md:mx-4 rounded-4xl w-full md:w-fit lg:max-w-[25dvw]",
                         "bg-dark text-blinkYellow text-5xl md:text-4xl",
                         "shadow shadow-lg shadow-black/80")}>
 
                     <div className="flex flex-col items-center justify-center gap-4">
                         <img src={graduationCover} alt="Graduation"
                             className="h-[50dvh] w-auto rounded-3xl" />
-                        <h1 className="font-celias-medium">Graduation</h1>
+                        <h1 className="font-celias-medium">Graduation <br /> <span className="text-dark">spacemaker</span></h1>
                     </div>
                     <NavLink to="/album/graduation" end>
                         <button className={cn(
                             "py-12 w-full",
-                            "md:py-4 md:px-12 rounded-4xl transition-all",
+                            "md:py-4 px-12 rounded-4xl transition-all",
+                            "text-black text-5xl md:text-3xl",
+                            "bg-blinkYellow hover:shadow-lg hover:shadow-blinkYellow/50"
+                        )}>
+                            take a look..
+                        </button>
+                    </NavLink>
+
+                </div>
+                <div id="tile"
+                    className={cn(
+                        "flex flex-col justify-center items-center gap-8 md:gap-16",
+                        "py-12 px-16 md:px-12 md:mx-4 rounded-4xl w-full md:w-fit lg:max-w-[25dvw]",
+                        "bg-dark text-blinkYellow text-5xl md:text-4xl",
+                        "shadow shadow-lg shadow-black/80")}>
+
+                    <div className="flex flex-col items-center justify-center gap-4">
+                        <img src={mbdtfCover} alt="MBDTF"
+                            className="h-[50dvh] w-auto rounded-3xl" />
+                        <h1 className="font-celias-medium text-wrap">My Beautiful Dark Twisted Fantasy</h1>
+                    </div>
+                    <NavLink to="/album/mbdtf" end>
+                        <button className={cn(
+                            "py-12 w-full",
+                            "md:py-4 px-12 rounded-4xl transition-all",
                             "text-black text-5xl md:text-3xl",
                             "bg-blinkYellow hover:shadow-lg hover:shadow-blinkYellow/50"
                         )}>
