@@ -60,7 +60,8 @@ export const HeroSection = () => {
                             "font-impact tracking-[-0.2rem] text-8xl col-span-2",
                             "md-tracking-[-0.3rem] md-text-[10rem]"
                         )}>
-                        YE
+                        Y
+                        <span className="text-blinkGreen">E</span>
                     </span>
 
                 </div>

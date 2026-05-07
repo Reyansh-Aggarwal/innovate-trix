@@ -31,9 +31,9 @@
 
 
 @theme {
-    --color-blinkYellow: #ffd15d;
+    --color-blinkYellow: #f9d02e;
     --color-blinkRed: #e73838;
-    --color-blinkGreen: #0c831f;
+    --color-blinkGreen: #318616;
 
     --background-image-blackTexture: url('assets/images/blackTexture.png');
 
