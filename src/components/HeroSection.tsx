@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react"
 import gsap from "gsap";
 import { cn } from "../lib/utils"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const HeroSection = () => {
     const blinkitRef = useRef<HTMLSpanElement>(null)
@@ -12,7 +15,7 @@ export const HeroSection = () => {
             const tl = gsap.timeline()
 
             gsap.set(blinkitRef.current, { y: 120, opacity: 0 })
-            gsap.set(yeRef.current, { y: 120, opacity: 0 })
+            gsap.set(yeRef.current, { y: -120, opacity: 0 })
             tl
                 // blinkit slides up
                 .to(blinkitRef.current, {
@@ -21,7 +24,7 @@ export const HeroSection = () => {
                     duration: 0.7,
                     ease: "power3.out",
                     delay: 1,
-                })                
+                })
                 // ye slides up
                 .to(yeRef.current, {
                     y: 0,
@@ -36,7 +39,7 @@ export const HeroSection = () => {
 
     return (
         <div id="HeroSection" data-snap
-        className="w-full h-dvh bg-blinkYellow select-none snap-start">
+            className="w-full h-dvh bg-blinkYellow select-none snap-start">
             <div className="w-full h-full flex items-center justify-center">
                 <div className={cn(
                     "w-fit overflow-hidden",
@@ -50,8 +53,8 @@ export const HeroSection = () => {
                         )}>
                         blink<span className="text-blinkGreen">it</span>
                     </span>
-                    <span ref={xRef} 
-                    className="text-[5rem] text-center">
+                    <span ref={xRef}
+                        className="text-[5rem] text-center">
                         ×
                     </span>
                     <span

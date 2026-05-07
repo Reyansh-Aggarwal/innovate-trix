@@ -4,52 +4,35 @@ export const AlbumSection = () => {
 
     return (
         <div id="dropSection" data-snap
-        className={cn(
-            "w-full h-dvh bg-blinkYellow font-celias-bold snap-start",
-            "flex flex-col items-center justify-center align-center text-center "
+            className={cn(
+                "w-full min-h-dvh bg-blinkYellow font-celias-bold snap-start",
+                "flex flex-col items-center align-center text-center py-8 gap-40"
             )}>
-            <h1 className="text-blinkGreen text-7xl px-8 pb-8 pt-4">THE COLLECTION</h1>
+            <h1 className="text-black text-7xl px-8 pt-8">THE COLLECTION</h1>
 
-            <div id = "tiles"
-            className = "w-full grid grid-template-col-2 md:flex md:flex-wrap items-center justify-center">
-                <div id = "tile"
-                className="items-center justify-center text-white text-md px-6 md:px-12">
-                    <div className={cn(
-                        "flex flex-col justify-center items-center gap-4 bg-red-500 backdrop-blur-sm",
-                        "py-12 px-6 md:px-12 md:mx-4 outline outline-white/10 rounded-3xl",
-                        "text-xl")}>
-                        <div className="w-[10rem] h-[10rem] md:w-[6rem] md:h-[6rem] bg-white "></div>
+            <div id="tiles"
+                className="w-full grid grid-cols-2 md:flex md:flex-wrap items-center justify-center gap-4 md:gap-0 px-2 font-celias">
+                <div id="tile"
+                    className={cn(
+                        "flex flex-col justify-center items-center gap-16",
+                        "py-12 px-6 md:px-12 md:mx-4 rounded-3xl ",
+                        "bg-black/90 text-blinkYellow text-2xl md:text-4xl")}>
+                    <div className="flex flex-col items-center justify-center gap-4">
+                        <div className="w-[10rem] h-[10rem] md:w-[12rem] md:h-[12rem] bg-white "></div>
                         <h1 className="">Graduation</h1>
-
-                        <button className={cn(
-                            "py-2 px-4 rounded-4xl transition-all",
-                            "text-black bg-blinkYellow hover:shadow-lg hover:shadow-blinkYellow/50 "
-                            )}>
-                            Buy Now
-                        </button>
                     </div>
-                </div>
-                <div id = "tile"
-                className="items-center justify-center text-white text-md px-6 md:px-12">
-                    <div className={cn(
-                        "flex flex-col justify-center items-center gap-4 bg-red-500 backdrop-blur-sm",
-                        "py-12 px-6 md:px-12 md:mx-4 outline outline-white/10 rounded-3xl",
-                        "text-xl")}>
-                        <div className="w-[10rem] h-[10rem] md:w-[6rem] md:h-[6rem] bg-white "></div>
-                        <h1 className="">Graduation</h1>
 
-                        <button className={cn(
-                            "py-2 px-4 rounded-4xl transition-all",
-                            "text-black bg-blinkYellow hover:shadow-lg hover:shadow-blinkYellow/50 "
-                            )}>
-                            Buy Now
-                        </button>
-                    </div>
+                    <button className={cn(
+                        "py-4 px-8",
+                        "md:py-4 md:px-12 rounded-4xl transition-all",
+                        "text-black bg-blinkYellow hover:shadow-lg hover:shadow-blinkYellow/50"
+                    )}>
+                        Buy Now
+                    </button>
                 </div>
-                
             </div>
 
-            
+
         </div>
     )
 
