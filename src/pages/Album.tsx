@@ -57,7 +57,7 @@ export const Album = () => {
 
     return (
         <div className={cn(
-            "w-full min-h-dvh font-celias snap-start",
+            "w-full min-h-dvh font-celias snap-start bg-blinkYellow",
             "flex flex-col items-left align-center text-center")}>
 
             <div
@@ -69,12 +69,11 @@ export const Album = () => {
             <button
                 onClick={handleNavigate}
                 className={cn(
-                    "absolute top-0 items-left w-fit m-2 z-20",
-                    "rounded-full p-2 bg-blinkYellow transition-all duration-300",
+                    "md:absolute top-0 flex justify-center items-center md:items-left md:m-2 w-full md:w-fit z-20",
+                    "md:rounded-full p-2 bg-blinkYellow transition-all duration-300 animate-fade-in-delay opacity-0",
                     "hover:p-4 hover:shadow hover:shadow-md hover:shadow-black/80"
-                )}
-            >
-                <img src={bearHead} className="h-[10dvh] w-auto" />
+                )}>
+                <img src={bearHead} className="max-h-[10dvh] w-auto items-center" />
             </button>
 
             <Outlet />

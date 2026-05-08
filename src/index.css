@@ -43,6 +43,34 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Caslon Antique';
+    src: url('./assets/fonts/CaslonAntique.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maximo';
+    src: url('./assets/fonts/Maximo.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Misfits';
+    src: url('./assets/fonts/MISFITS_.TTF') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('./assets/fonts/HelveticaNeueThin.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
 @theme {
     --color-blinkYellow: #f9d02e;
     --color-blinkGreen: #318616;
@@ -55,12 +83,23 @@
     --color-mbdtfGold: #ee954e;
     --color-mbdtfLight: #bd4a4a;
 
+    --color-yeezusOrange: #FF4500;
+    --color-yeezusLight: #fc6026;
+
+    --color-bullyLight: #3c3c3c;
+
+    --color-heartbreakGray: #929290;
+    --color-heartbreakLight: #a1a19f;
+
     --font-celias: 'Celias', sans-serif;
     --font-celias-medium: 'Celias Medium', sans-serif;
     --font-celias-bold: 'Celias Bold', sans-serif;
     --font-impact: 'Impact', sans-serif;
     --font-druk-super: 'Druk Super', 'Roboto Bold', sans-serif;
     --font-druk-bold: 'Druk Bold', 'Roboto Medium', sans-serif;
+    --font-caslon: 'Caslon Antique', sans-serif;
+    --font-misfits: 'Misfits', sans-serif;
+    --font-helvetica-thin: 'Helvetica Neue', sans-serif;
 
     --animate-fade-in: fade-in 2s ease-out forwards;
     --animate-fade-in-delay: fade-in 2s ease-out 1s forwards;

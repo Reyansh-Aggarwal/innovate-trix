@@ -43,7 +43,7 @@ export const HeroSection = () => {
             <div className="w-full h-full flex items-center justify-center">
                 <div className={cn(
                     "w-fit overflow-hidden",
-                    "grid grid-cols-5 items-center justify-around gap-x-[-rem]",
+                    "flex flex-col md:grid md:grid-cols-5 items-center justify-around gap-x-[-rem]",
                     "font-celias-bold text-black")}>
                     <span
                         ref={blinkitRef}

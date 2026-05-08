@@ -1,19 +1,18 @@
 import { cn } from "../../lib/utils"
-import albumImage from "../../assets/images/album-covers/Graduation.png";
+import albumImage from "../../assets/images/album-covers/donda.png";
 
-export const Graduation = () => {
+export const Donda = () => {
 
-    const list = ["MAGGI", "NOTEBOOKS", "RAMEN", "HIGHLIGHTERS", "FROZEN SNACKS", "STATIONERY"];
+    const list = ["DETERGENTS", "AIR FRESHENERS", "FABRIC SOFTENER", "SURFACE CLEANERS"];
 
     return (
         <div className={cn(
             "w-full min-h-dvh flex flex-col justify-between md:justify-around items-center select-none",
-            "bg-gradPurple text-gradPink font-druk-bold"
+            "bg-dark text-bullyLight font-druk-bold"
         )}>
             <div className="w-full h-fit text-center pt-8 pb-16 md:pt-0 md:pb-0 animate-fade-in opacity-0">
-                <h1 className="font-druk-super text-6xl md:text-8xl">Graduation</h1>
+                <h1 className="font-maximo text-8xl md:text-8xl">Donda</h1>
             </div>
-
 
             <div className={cn(
                 "h-full w-full flex flex-col gap-32 md:grid md:grid-cols-2 justify-between items-center",
@@ -31,11 +30,11 @@ export const Graduation = () => {
                     "text-4xl md:text-3xl lg:text-4xl font-celias items-left",
                     "shadow shadow-lg shadow-black/80"
                 )}>
-                    <hr className="text-[#6a488b] w-full" />
+                    <hr className="text-bullyLight w-full" />
                     {list.map((item, index) => (
-                        <div key={index} className="w-full text-left text-[#6a488b] hover:bg-[#6a488b]/10">
+                        <div key={index} className="w-full text-left text-bullyLight hover:bg-bullyLight/10">
                             <h1 className="w-full px-8 py-4">{item}</h1>
-                            <hr className="text-[#6a488b] w-full" />
+                            <hr className="text-bullyLight w-full" />
                         </div>
                     ))}
                 </div>

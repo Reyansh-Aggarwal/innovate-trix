@@ -3,7 +3,7 @@ import albumImage from "../../assets/images/album-covers/mbdtf.png";
 
 export const MBDTF = () => {
 
-    const list = ["CHEESECAKE", "MACARONS", "BROWNIES", "TIRAMISU"];
+    const list = ["CHEESECAKES", "MACARONS", "BROWNIES", "TIRAMISU"];
 
     return (
         <div className={cn(
@@ -11,13 +11,13 @@ export const MBDTF = () => {
             "bg-mbdtfRed text-mbdtfGold font-druk-bold"
         )}>
             <div className="w-full h-fit text-center pt-8 pb-16 md:pt-0 md:pb-0 animate-fade-in opacity-0">
-                <h1 className="font-druk-super text-8xl">My Beautiful Dark Twisted Fantasy</h1>
+                <h1 className="font-caslon tracking-tight text-7xl md:text-8xl">My Beautiful Dark Twisted Fantasy</h1>
             </div>
 
 
             <div className={cn(
                 "h-full w-full flex flex-col gap-32 md:grid md:grid-cols-2 justify-between items-center",
-                "pb-16 md:pb-0 px-20 z-0",
+                "pb-16 md:pb-0 md:px-20 z-0",
                 "opacity-0 animate-fade-in-delay"
             )}>
                 <img src={albumImage}
