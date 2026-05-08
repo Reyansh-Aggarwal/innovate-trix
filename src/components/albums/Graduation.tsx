@@ -1,5 +1,5 @@
 import { cn } from "../../lib/utils"
-import albumImage from "../../assets/images/album-covers/Graduation.png";
+import albumImage from "../../assets/images/album-covers/graduation.png";
 
 export const Graduation = () => {
 
